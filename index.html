@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Resume</title>
+        <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+<div id ="container">
+    <form id = "ShareableResume">
+<fieldset id="information">
+    <h1> Build Your Resume</h1>
+    <h3> Personal-Info:</h3>
+    <label for = "personal-Information"></label>
+    <input type="text" placeholder="Enter Your Name"id="userName" required>
+    <br><br>
+    <input type="file" placeholder="Upload Profile picture" id="photo" required> 
+    <br> 
+    <h3> Contact Info:</h3>
+    <label for = "mail"></label>
+    <input type="email" placeholder="Enter G-MAIL"id="userGmail" required>
+    <br>
+    <label for = "PhoneNumber"></label>
+    <input type="tel" placeholder="Enter phone Number"id="PhoneNumber" required>
+<br>
+<label for="other-links"></label>
+<input type="url" placeholder="Enter url of other account like linkedin/github" id="otherURL">
+</fieldset>
+<fieldset id="education">
+<h3>Education: </h3>
+<br>
+ <ul><label for="Education"></label>
+<li><input type="text" placeholder="Enter your Education" id=" userEducation" required></li>
+<br>
+ <li><input type="text" placeholder="Enter Institute Name" id=" institute" required></li>  <br>
+ <li><input type="text" placeholder="Enter your gpa/grades" id=" GPA/GRADES" required></li>
+ </ul> <br>
+
+</fieldset>
+
+<fieldset id="experience">
+    <h3>Experience: </h3>
+    <br>
+  <ul>  <label for="Experience"></label>
+  <li> <input type="text" placeholder="Enter your Experiences" id=" addExperience" required></li> </ul>  <br>
+  
+</fieldset>
+
+<fieldset id="skills">
+     <h3> skills:</h3>
+   <ul><label for="skills"></label>
+  <li> <input type="text" id="userSkills" placeholder="Enter Your Skills" required></li>
+   </ul> <br>
+  
+</fieldset>
+<br>
+<button type ="button " id ="generateForm"> Generate Form</button>
+    </form>
+
+
+
+    <div id=" ResumePage" class="Resume-Builded hidden">
+
+    <div id="resume-content" class=" reume-content">
+        <h1 id="reumeName"></h1>
+        <img id="reumePicture" class=" reume-photo" src="" alt="photo">
+        <p id="userMail"> </p>
+        <p id=" UserPhoneNo"></p>
+        <p id="userBioLinks"></p>
+
+        <h2> Education</h2>
+        <p id="userDegree"></p>
+        <p id="userInstitute"></p>
+        <p id="userResult"></p>
+
+        <h2> Experience</h2>
+        <p id=" userJobExperience"></p>
+
+        <h2> Skills</h2>
+        <p id="userSkills"></p>
+    </div>
+    
+    <div id="buttons">
+        <button id="editResume">Edit</button>
+        <button id="backToHome" onclick="window.loaction.href='index.html' ">Back To Home</button>
+        <button id=" shareResume"> Share Link</button>
+        <button id ='downloadPdf'> Download-form</button>
+    </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
